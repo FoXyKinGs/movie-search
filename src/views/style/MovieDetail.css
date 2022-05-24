@@ -1,0 +1,130 @@
+.display-block {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.display-block .poster {
+  width: 15%;
+  padding: 15px;
+}
+
+.display-block .poster img {
+  width: 100%;
+}
+
+.display-block .about {
+  width: 85%;
+  padding: 15px;
+}
+
+.display-block .about h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.display-block .about .product {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.display-block .about .product p {
+  margin: 5px;
+}
+
+.display-block .about .product p:first-child {
+  color: rgba(255, 255, 255, 0.2)
+}
+
+.display-block .about .product p:last-child {
+  font-weight: 700;
+}
+
+.display-block .about .genres {
+  position: absolute;
+  bottom: 15px;
+}
+
+.detailMovie {
+  margin-top: 15px;
+}
+
+.detailMovie .synopsis h4 {
+  margin-bottom: 15px;
+}
+
+.detailMovie .rating {
+  margin-top: 30px;
+  font-size: 13px;
+}
+
+.detailMovie .rating .ratings {
+  display: flex;
+  padding: 10px;
+}
+
+.detailMovie .rating .ratings p:first-child {
+  content: '';
+  width: 35%;
+}
+
+.detailMovie .rating .ratings p:last-child {
+  content: '';
+  width: 65%;
+}
+
+.moreInformation {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.moreInformation .director {
+  margin: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.moreInformation .writer {
+  margin: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.moreInformation .actor {
+  margin: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-gray {
+  color:rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 425px) {
+  .display-block .poster {
+    width: 40%;
+  }
+
+  .display-block .about {
+    width: 60%;
+  }
+
+  .display-block .about h1 {
+    font-size: 20px;
+  }
+
+  .display-block .about .product p {
+    font-size: 12px;
+  }
+
+  .display-block .about .genres {
+    position: relative;
+    margin-top: 15px;
+    font-size: 12px;
+  }
+}

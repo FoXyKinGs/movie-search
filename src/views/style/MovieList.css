@@ -1,0 +1,74 @@
+#searchBar input[data-v-movieListSearchBar] {
+  width: 100%;
+  height: 56px;
+  border: 1px solid #000;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+#movieList {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#movieList h2 {
+  border-left: 4px solid rgb(255, 0, 0);
+  padding-left: 10px;
+}
+
+#movieList .lists {
+  box-sizing: border-box;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#movieList .lists .coloumn {
+  width: 20%;
+  height: 100%;
+}
+
+@media (max-width: 576px) {
+  #movieList .lists .coloumn {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+.pagination {
+  margin: 15px auto;
+  display: flex;
+  list-style: none;
+  outline: none;
+}
+
+.pagination > .active > a{
+  background-color: #fff ;
+  border-color: #fff ;
+  color: #fff;
+}
+
+.pagination > li > a{
+  border: 1px solid #fff ;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+  background-color: rgb(72, 72, 72) ;
+  border-color: #fff;
+  outline: none ;
+}
+
+.pagination > li > a, .pagination > li > span{
+  color: #fff
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span{
+  border-radius: unset
+}
+
+#noMovieAvailable {
+  padding: 15px;
+}
